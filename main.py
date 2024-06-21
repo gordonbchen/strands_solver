@@ -63,7 +63,7 @@ def get_poss_words(
     traversed_coords: list[tuple[int, int]],
     letters: list[list[str]],
     valid_words: list[str],
-) -> list[list[tuple[int, int]]]:
+) -> list[str]:
     """Get all possible words that can be made."""
     poss_words = []
     for adj_coord in get_adj_coords(curr_coord, letters, traversed_coords):
